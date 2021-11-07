@@ -1,0 +1,487 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(196, 201, 211);
+  font-size: 13px;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-family: 'Oswald';
+}
+
+#header {
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  background: #0d2568;
+  color: rgb(255, 255, 255);
+  font-size: 5px;
+  font-family: 'Oswald';
+}
+
+button {
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #657077;
+  padding: 10px 15px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0 2px rgb(70, 70, 70);
+  margin-left: auto;
+  margin-right: auto;
+  width: 18.5%;
+  border: none;
+  background-color: rgb(220, 222, 228);
+  font-family: 'Oswald';
+}
+
+.bt .btn:hover {
+  background-color: #254292;
+  color: rgb(255, 255, 255);
+  font-family: 'Oswald';
+}
+.bt{
+  padding-top: 0.3rem;
+  padding-bottom: 1rem;
+  font-family: 'Oswald';
+  
+}
+html{
+  scroll-behavior: smooth;
+  font-family: 'Oswald';
+}
+
+img {
+  vertical-align: middle;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  height: 60bh;
+  font-family: 'Oswald';
+}
+
+a {
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  background-color: rgba(255, 255, 255, 0);
+  display: block;
+  font-size: 22px;
+  font-family: 'Oswald';
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+  font-family: 'Oswald';
+}
+
+li {
+  float: left;
+  font-family: 'Oswald';
+}
+
+ul:after {
+  clear: both;
+  font-family: 'Oswald';
+}
+
+ul:before,
+ul:after {
+  content: " ";
+  display: table;
+  font-family: 'Oswald';
+}
+
+nav {
+  position: relative;
+  background: #2b2b2b;
+  background-image: -webkit-linear-gradient(bottom, #303030 7%, #193688 100%);
+  background-image: -webkit-linear-gradient(both, black,white);
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #0e0e0e;
+  -webkit-box-shadow: 2px 2px 3px #888;
+  -moz-box-shadow: 2px 2px 3px #888;
+  box-shadow: 2px 2px 3px #888;
+  font-family: 'Oswald';
+}
+
+ul.primary {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  font-family: 'Oswald';
+}
+
+ul.primary li a {
+  display: block;
+  padding: 20px 30px;
+  border-right: 1px solid #3d3d3d;
+  font-family: 'Oswald';
+}
+
+ul.primary li:last-child a {
+  border-right: none;
+  font-family: 'Oswald';
+}
+
+ul.primary li a:hover {
+  color: #000;
+  font-family: 'Oswald';
+}
+
+ul.sub {
+  position: absolute;
+  z-index: 200;
+  box-shadow: 2px 2px 0 #ffffff;
+  background-color: rgba(30,30,30,.9) !important;
+  max-width: fit-content;
+  display: none;
+  font-family: 'Oswald';
+}
+
+ul.sub li {
+  float: none;
+  margin: 0;
+  font-family: 'Oswald';
+}
+
+ul.sub li a {
+  border-bottom: 1px dotted rgb(255, 255, 255);
+  border-right: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  font-family: 'Oswald';
+}
+
+ul.sub li:last-child a {
+  border-bottom: none;
+  font-family: 'Oswald';
+}
+
+ul.sub li a:hover {
+  color: rgb(3, 0, 0);
+  background: #ffffff;
+  font-family: 'Oswald';
+}
+
+ul.primary li:hover ul {
+  display: block;
+  background: #fff;
+  font-family: 'Oswald';
+}
+
+ul.primary li:hover a {
+  background: rgba(3, 3, 3, 0.3);
+  color: rgb(236, 232, 232);
+  text-shadow: none;
+  font-family: 'Oswald';
+}
+
+ul.primary li:hover > a {
+  color: rgb(255, 255, 255);
+  font-family: 'Oswald';
+}
+
+.mySlides {
+  display: none;
+  font-family: 'Oswald';
+}
+
+.page {
+  width: 100%;
+}
+
+.wrap {
+  display: inline-block;
+  margin-top: 0px;
+  width: 100%;
+  margin: 0;
+  font-family: 'Oswald';
+}
+
+
+.decor {
+  background-size: 50px 50%;
+  display: block;
+  font-family: 'Oswald';
+}
+
+.cards{
+  text-align: center;
+  font-family: 'Oswald';
+}
+
+.students {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Oswald';
+}
+
+.card {
+  max-width: 16%;
+  min-width: 125px;
+  margin: auto;
+  flex-grow: 1;
+  font-family: arial;
+  font-family: 'Oswald';
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+  font-family: 'Oswald';
+}
+
+button1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(44, 44, 44);
+  background-color: rgb(196, 201, 211);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Oswald';
+}
+
+button1:hover, a:hover {
+  opacity: 0.5;
+  font-family: 'Oswald';
+}
+
+@media only screen and (max-width: 600px) {
+  .decor {
+    padding: px;
+    font-family: 'Oswald';
+  }
+
+  .wrap {
+    width: 100%;
+    margin-top: 0px;
+    font-family: 'Oswald';
+  }
+
+  li {
+    float: none;
+    font-family: 'Oswald';
+  }
+
+  ul.primary li:hover a {
+    background: none;
+    color: #8b8b8b;
+    text-shadow: 1px 1px #000;
+    font-family: 'Oswald';
+  }
+
+  ul.primary li:hover ul {
+    display: block;
+    color: #fff;
+    font-family: 'Oswald';
+  }
+
+  ul.sub {
+    display: block;
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    font-family: 'Oswald';
+  }
+
+  ul.sub li a {
+    background: #272727;
+    border: none;
+    color: #8b8b8b;
+    font-family: 'Oswald';
+  }
+
+  ul.sub li a:hover {
+    color: #ccc;
+    background: none;
+    font-family: 'Oswald';
+  }
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  font-family: 'Oswald';
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+  
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slideshow-container {
+  padding-top: 1rem;
+  max-width: 98%;
+  margin: auto;
+  height: 100%;
+  font-family: 'Oswald';
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Oswald';
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: 'Oswald';
+}
+
+
+
+.active {
+  background-color: #717171;
+  font-family: 'Oswald';
+}
+
+@media only screen and (max-width: 300px) {
+  .text .row .column  {
+    font-size: 11px;
+    font-family: 'Oswald';
+  }
+}
+
+
+.arrow {
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(-135deg);
+  transition: border-width 150ms ease-in-out;
+  size: 1rem;
+  font-family: 'Oswald';
+  padding-bottom: .5rem;
+}
+
+.arrow:hover {
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+  font-family: 'Oswald';
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e242d;
+  height: 70px;
+  width: 5%;
+  float: right;
+  font-family: 'Oswald';
+}
+
+.main-content{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1366px;
+  display: flex;
+  font-family: 'Oswald';
+}
+
+.main-content{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1366px;
+  display: flex;
+  font-family: 'Oswald';
+}
+
+.pad-20{
+  padding: 20px;
+  font-family: 'Oswald';
+}
+
+.col-40{
+  width: 40%;
+  font-family: 'Oswald';
+}
+
+.col-60{
+  width: 60%;
+  font-family: 'Oswald';
+}
+
+.col-50 {
+  width: 50%;
+  font-family: 'Oswald';
+}
+
+@media only screen and (max-width:800px){
+  .main-content{
+    display: block;
+    font-family: 'Oswald';
+  }
+  .col-40{
+    width: 100%;
+    font-family: 'Oswald';
+  }
+  .col-60{
+    width: 100%;
+    font-family: 'Oswald';
+  }
+
+  .col-50 {
+    width: 100%;
+    font-family: 'Oswald';
+  }
+  
+  .students {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Oswald';
+  }
+  
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(document).scrollTop($(document).height());
+        });
+      });
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div id="header">
+          <p>
+            <img src="attachments/logo.png" alt="" style="float: none; z-index: 1; ">
+            <h1 style="font-size: 25px;">
+              Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI)
+            </h1>
+            <h2 style="font-size: 20px;">
+              (Deemed to be University as declared by Govt. of India under Section 3 of UGC Act, 1956)
+            </h2>
+            <h2 style="font-size: 20px;">
+              (Accredited by NAAC with A++ Grade)
+            </h2>
+          </p>
+        </div>
+        <main>
+          <section class="wrap">
+            <nav>
+              <span class="decor"></span>
+              <ul class="primary">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="common.html">Courses</a>
+                </li>
+                <li>
+                  <a href="attachments/RKMVERI_BDA_CS_Prospectus.pdf" target="_blank">Prospectus</a>
+                </li>
+                <li>
+                  <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        
+  
+          <section class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="attachments/04.jpg" style="width: 100%; z-index: -1" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="attachments/01.jpg" style="width: 100%; z-index: -1" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="attachments/05.jpg" style="width: 100%; z-index: -1" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="attachments/07.jpg" style="width: 100%; z-index: -1" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="attachments/06.jpg" style="width: 100%; z-index: -1" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="attachments/03.jpg" style="width: 100%; z-index: -1" />
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="attachments/02.jpg" style="width: 100%; z-index: -1" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="attachments/08.jpg" style="width: 100%; z-index: -1" />
+            </div>
+          </section>
+        </main>
+  
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <a href="index.html">
+            <div class="bt">
+                <button class="btn" style="font-size: 25px;">Go back to Students' Profile</button>
+            </div>
+        </a>
+    </div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script>
+</body>
+</html>
